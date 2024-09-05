@@ -506,7 +506,7 @@ const checkParentSize = () => {
 }
 
 const getParentSize = () => {
-  if (parent.value) {
+  if (parent.value && el.value) {
     const parentElement =
       typeof parent.value === 'string'
         ? el.value.closest(parent.value)
